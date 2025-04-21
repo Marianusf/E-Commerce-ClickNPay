@@ -34,7 +34,7 @@
     <!-- Hero Section -->
     <div class="hero">
         <div>
-            <h1>Welcome to ClickNPay</h1>
+            <h1>Welcome to ClickNPayfdsdg</h1>
             <p>Your one-stop solution for all your shopping needs.</p>
             <a href="#shop" class="btn btn-primary btn-lg">Start Shopping</a>
         </div>
