@@ -22,7 +22,7 @@
         <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to ClickNPay</h1>
             <p class="mb-6 text-lg md:text-xl max-w-xl">Your one-stop solution for all your shopping needs.</p>
-            <a href="#shop"
+            <a href="{{ route('loginForm') }}"
                 class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out">
                 Start Shopping
             </a>
