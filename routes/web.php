@@ -7,3 +7,4 @@ Route::get('/', function () {
     return view('landingpage');
 });
 Route::get('loginForm', [AuthController::class, 'showLoginForm'])->name('loginForm');
+Route::get('registrasiForm', [AuthController::class, 'showRegistrasiForm'])->name('registrasiForm');
