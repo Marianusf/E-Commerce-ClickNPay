@@ -35,7 +35,7 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">Registrasi</h2>
-        <form action="{{ route('register') }}" method="POST" class="space-y-4" id="registrationForm">
+        <form action="{{ route('registrasiForm') }}" method="POST" class="space-y-4" id="registrationForm">
             @csrf
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
@@ -88,7 +88,7 @@
             </button>
         </form>
         <p class="text-sm text-center text-gray-600 mt-4">
-            Sudah punya akun? <a href="{{ route('login') }}" class="text-blue-500 hover:underline">Masuk</a>
+            Sudah punya akun? <a href="{{ route('loginForm') }}" class="text-blue-500 hover:underline">Masuk</a>
         </p>
     </div>
 

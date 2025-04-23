@@ -16,4 +16,8 @@ class AuthController extends Controller
     {
         return view('Auth.Login');
     }
+    public function showRegistrasiForm()
+    {
+        return view('Auth.Registrasi');
+    }
 }
