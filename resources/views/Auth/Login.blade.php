@@ -60,7 +60,7 @@
                         class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
                     <label for="remember_me" class="ml-2 block text-sm text-gray-900">Remember me</label>
                 </div>
-                <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
+                <a href="#" class="text-sm text-blue-600 hover:underline">Lupa Password?</a>
             </div>
             <div>
                 <button type="submit"
@@ -70,7 +70,7 @@
             </div>
         </form>
         <p class="mt-6 text-center text-sm text-gray-600">
-            Don't have an account? <a href="#" class="text-blue-600 hover:underline">Sign up</a>
+            Tidak Memiliki Akun? <a href="registrasiForm" class="text-blue-600 hover:underline">Registrasi Akun</a>
         </p>
     </div>
 
