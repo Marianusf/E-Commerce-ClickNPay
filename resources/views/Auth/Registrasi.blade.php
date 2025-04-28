@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Registrasi Buyer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -32,10 +34,33 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+@if (session('success'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Sukses!',
+            text: '{{ session('success') }}',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+        });
+    </script>
+@endif
+
+@if ($errors->any())
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            html: '{!! implode('<br>', $errors->all()) !!}',
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'OK'
+        });
+    </script>
+@endif
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
-        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Buat Akun Buyer</h2>
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Buat Akun</h2>
 
         <form id="registrationForm" action="{{ route('register') }}" method="POST" class="space-y-5">
             @csrf
