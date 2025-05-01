@@ -33,16 +33,16 @@
     <!-- Features Section -->
     <section class="py-16 bg-white text-center">
         <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8">Why Choose ClickNPay?</h2>
+            <h2 class="text-3xl font-bold mb-8">Mengapa Harus ClickNPay?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <div class="text-blue-500 text-5xl mb-4">🛒</div>
                     <h4 class="text-xl font-semibold mb-2">Wide Range of Products</h4>
-                    <p>Find everything you need in one place.</p>
+                    <p>Dapatkan segala kebutuhan kamu disini! </p>
                 </div>
                 <div>
                     <div class="text-green-500 text-5xl mb-4">🔒</div>
-                    <h4 class="text-xl font-semibold mb-2">Secure Payments</h4>
+                    <h4 class="text-xl font-semibold mb-2">Pembayaran yang Aman</h4>
                     <p>Shop with confidence with our secure payment system.</p>
                 </div>
                 <div>
