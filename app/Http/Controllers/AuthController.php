@@ -25,26 +25,22 @@ class AuthController extends Controller
     }
     public function register(Request $request)
     {
-        // Validasi data input
+        // Validasi data input (hanya nama, email, password)
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255|unique:user,email',
             'password' => 'required|string|min:8|confirmed',
-            'phone' => 'required|string|max:20',
-            'address' => 'required|string',
         ]);
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
 
-        // Buat user baru
+        // Buat user baru dengan role buyer dan status aktif
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'phone' => $request->phone,
-            'address' => $request->address,
             'role' => 'buyer', // default buyer
             'status' => 'active', // default active
         ]);
