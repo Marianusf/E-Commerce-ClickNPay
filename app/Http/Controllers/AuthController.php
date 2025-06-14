@@ -52,6 +52,6 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         // Redirect ke dashboard peminjam
-        return redirect()->route('/')->with('message', 'Login berhasil sebagai Peminjam');
+        return redirect()->route('home')->with('message', 'Login berhasil sebagai Peminjam');
     }
 }
