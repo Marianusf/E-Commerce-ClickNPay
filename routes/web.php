@@ -8,6 +8,7 @@ Route::get('/', function () {
 });
 Route::get('loginForm', [AuthController::class, 'showLoginForm'])->name('loginForm');
 Route::get('registrasiForm', [AuthController::class, 'showRegistrasiForm'])->name('registrasiForm');
+Route::post('login', [AuthController::class, 'login'])->name('login');
 
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
