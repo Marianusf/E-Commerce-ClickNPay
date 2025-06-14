@@ -16,7 +16,7 @@
             <h1 class="text-2xl font-bold text-gray-800">Welcome Back!</h1>
             <p class="text-gray-600">Login to your account</p>
         </div>
-        <form action="" method="POST" class="space-y-4">
+        <form method="POST" action="{{ route('login') }}" class="flex flex-col gap-4">
             @csrf
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>

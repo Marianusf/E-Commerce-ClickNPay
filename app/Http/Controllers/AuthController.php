@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 class AuthController extends Controller
@@ -47,5 +48,10 @@ class AuthController extends Controller
 
         // Redirect ke halaman login dengan pesan sukses
         return redirect()->route('loginForm')->with('success', 'Registrasi berhasil! Silakan login.');
+    }
+    public function login(Request $request)
+    {
+        // Redirect ke dashboard peminjam
+        return redirect()->route('home')->with('message', 'Login berhasil sebagai Peminjam');
     }
 }
